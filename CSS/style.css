@@ -1,1 +1,67 @@
 /* CS465 Lab1 style file */
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background: #25822f;
+    color: #333;
+}
+
+.cover {
+ background-image: url(https://cdn.pixabay.com/photo/2022/02/25/09/02/disc-golf-7033786_1280.jpg);
+ background-size: cover;
+}
+
+.box {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 12px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.main {
+    display: flex;           
+    justify-content: space-between;
+    align-items: flex-start;   
+    margin: 50px;
+    gap: 20px;                    
+}
+
+.left {
+    max-width: 50%;              
+    flex: 1;                        
+}
+.right {
+    max-width: 50%;              
+    flex: 1;                        
+}
+
+.corner {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.footer {
+    clear: both;
+    text-align: center;
+    padding: 12px;
+    background: #f0f0f0;
+    border-top: 1px solid #aaa;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+    .main {
+        flex-direction: column;
+        gap: 10px;                 
+    }
+
+    .left {
+        max-width: 100%;
+    }
+
+    .right {
+        max-width: 100%;           
+    }
+}
